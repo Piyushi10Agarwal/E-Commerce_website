@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="name">YOUR NAME</label>
+	<input required type="text" value= "<%= review.name %>" name="name" id="name" class="form-control">
+</div>
+<div class="form-group">
+	<label for="description">DESCRIPTION</label>
+	<textarea name="description" id="description" class="form-control"><%=review.description %></textarea>
+</div>
+<div class="form-group">
+	<label for="markdown">MARKDOWN</label>
+	<textarea required name="markdown" id="markdown" class="form-control"><%=review.markdown %></textarea>
+</div>
+<a href="/reviews" class="btn btn-secondary">CANCEL</a>
+<button type="submit" class="btn btn-primary">SUBMIT</button>

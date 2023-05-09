@@ -1,0 +1,34 @@
+<%- include('./header') %>
+                <div class="container justify-content-center w-75">
+                    <h1 class="mb-4 text-center">Review</h1>
+                    <% if(user){ %>
+                        <div class="row justify-content-center">
+                            <a href="/reviews/new" class="btn btn-primary">Add Review</a>
+                        </div>
+                    <% } %>
+                    <% reviews.forEach(review =>{ %>
+                    <div class="card mt-4">
+				        <div class="card-body">
+					       <h4 class="card-title"><%= review.name %></h4>
+					       <div class="card-subtitle test-muted mb-2">
+						      <!-- toLocaleDateString() converts date into dd/mm/yy formate
+							otherwise it shows a very big string contains india falana falana-->
+						      <%= review.date.toLocaleDateString() %>
+					       </div>
+					       <div class="card-text mb-2">
+                               <p><%= review.description.substring(0,100)+"..." %>
+                                   <a href="/reviews/read/<%=review.id%>">Read more</a>
+                               </p>
+                            </div>
+                                <% if(user){ %>
+                                    <% if(user.username === review.username){ %>
+					                   <form action="/reviews/<%= review.id%>?_method=DELETE" method="POST" class="d-inline">
+						                  <button type="submit" class="btn btn-danger">Delete</button>
+					                   </form>
+                                    <% } %>
+                                <% } %>
+				        </div>
+			         </div>
+		          <% }) %>
+		      </div>
+<%- include('./footer') %>

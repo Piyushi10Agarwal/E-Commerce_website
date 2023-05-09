@@ -1,0 +1,65 @@
+.custom-toggler.navbar-toggler {
+    border-color: white;
+    background-color: white;
+}
+#nav {
+                background-color: 	#2b1d0e;
+                 font-family: Verdana, Geneva, sans-serif; 
+                font-size:30px;
+                }
+             #footer{
+                background-color: 	#2b1d0e; 
+                 font-family: Verdana, Geneva, sans-serif; font-size:16px;
+                 font-weight: lighter;
+                }
+
+            #middle, #card{
+                background-color:#f2f2f2;
+            }
+            body{
+                font-family: Verdana, Geneva, sans-serif;
+                background-image:url("data:image/jpeg;base64,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");
+                background-attachment: fixed;
+                background-size:contain;
+               
+            }
+            #ima{
+                width: inherit;
+                height: 600px;
+                padding: 100px;
+                background-image:url('/img/index-page-background.jpeg');
+                background-size:cover;
+            }
+            #ima #image{
+                width: 800px;
+                height: 400px;
+                margin: auto;
+                padding: 10px;
+                
+            }
+            #ima #image p{
+                display: block;
+                animation:type 3s steps(22);
+                overflow:hidden;
+                white-space:nowrap;
+                border-right:4px solid black;
+                color:white;
+                font-size:30px;
+            }
+            @keyframes type{
+                0%{
+                    width:0ch;
+                }
+                100%{
+                    width:22ch;
+                }
+            }
+.mail
+{
+  text-align: center;
+/*  background-color: #fd5e53;*/
+}
+
+.hover-effect:hover{
+    background-color: rgb(133, 126, 126);
+}
